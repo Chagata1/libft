@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-static int	whitespaces(char *str, int *ptr_i)
+static int	whitespace(char *str, int *ptr_i)
 {
 	int	count;
 	int	i;
@@ -37,7 +37,7 @@ int	ft_atoi(const char *str)
 	int	i;
 
 	result = 0;
-	sign = whitespaces((char *)str, &i);
+	sign = whitespace((char *)str, &i);
 	while (str[i] && str[i] >= 48 && str[i] <= 57)
 	{
 		result *= 10;
